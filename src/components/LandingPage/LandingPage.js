@@ -135,9 +135,9 @@ const LandingPage = () => {
                       <div class="me-3">
                         <img class="img-fluid" src="assets/images/icon/01.svg" alt="" />
                       </div>
-                      <h5 class="m-0 text-light">App Development</h5>
+                      <h5 class="m-0 text-light">Terverifikasi</h5>
                     </div>
-                    <p class="mb-0">Serspiciatis unde omnis iste natus laudantium, totam rem aperiam.</p>
+                    <p class="mb-0">Kami selalu berkomitmen untuk menjual produk kualitas terbaik dan pastinya dilengkapi dengan garansi resmi</p>
                   </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mt-6 mt-md-0">

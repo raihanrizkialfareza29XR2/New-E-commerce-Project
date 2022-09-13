@@ -10,7 +10,7 @@ const Blog = () => {
   });
   return (
     <div className="text-white">
-      <section class="custom-pt-1 custom-pb-2 position-relative">
+      <section class="custom-pt-1 custom-pb-1 position-relative">
         <div id="particles-js"></div>
         <div class="container">
           <div class="row  text-center">

@@ -40,6 +40,16 @@ const Login = () => {
         history('/');
       });
   };
+
+  const signGoogle = async () => {
+    await axios.get('http://localhost:8000/api/login/google', { withCredentials: true }).then((response) => {
+      console.log(response);
+      localStorage.setItem('isAuth', true);
+      localStorage.setItem('token', response.data.data.access_token);
+      localStorage.setItem('username', response.data.data.user.username);
+      history('/');
+    });
+  };
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -131,6 +141,9 @@ const Login = () => {
                   </div>
                   <button type="submit" class="btn btn-primary btn-block" onClick={login}>
                     Login Now
+                  </button>
+                  <button type="submit" class="btn btn-danger mt-2 btn-block" onClick={signGoogle}>
+                    Login With Google
                   </button>
                   <div class="d-flex align-items-center text-center justify-content-center mt-4">
                     <span class="text-muted me-1">Don't have an account?</span>

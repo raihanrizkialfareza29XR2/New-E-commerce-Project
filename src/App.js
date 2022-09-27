@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <div className="page-wrapper">
-        <Router>
+        <Router forceRefresh={true}>
           <Navbar />
           <Routes>
             <Route path="/" element={<LandingPage />} />
